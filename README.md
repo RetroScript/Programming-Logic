@@ -1,4 +1,4 @@
-# PROGRAMMING LOGIC REVIEW CODE
+# PROGRAMMING LOGIC WITH JAVA!
 
   Um código em java, devidamente comentado, com elementos básicos da lógica de programação e com o uso de conceitos e experimentos diversos. 
 
