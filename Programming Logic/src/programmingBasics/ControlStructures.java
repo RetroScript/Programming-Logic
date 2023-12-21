@@ -14,7 +14,7 @@ public class ControlStructures {
 	public static void main(String [] args) {
 	
 		//LOOPS
-		System.out.println("LOOPINGS EXAMPLES");
+		System.out.println("\n LOOPINGS EXAMPLES \n");
 		
 		//loops in programming logic are structures that repeats something on a specific amount of 
 		//time, they're generally activated when a condition is validated true
@@ -23,36 +23,36 @@ public class ControlStructures {
 		
 		
 		
-			//While Loops:
-		
-		//this is a variable, it has a value and it can be used at conditions
-		boolean isTrue = false;
+			//While Loop:
 		
 		//this is the Java syntax for a while loop
 			//inside the brackets goes the condition variable
-			//inside the curly brackets goes the action to be executed due to the matching 
-			//condition
-		while(isTrue) {
-			System.out.println("isTrue");
+				//usually a kind of activator is used, like an boolean value
+				//sometimes it's convenient to use a limiter
+			//inside the curly brackets goes the action to be executed
+		
+		
+		System.out.println("*while loop*");
+		
+		boolean activator = false;
+		
+		//this loop will run while the activator is 'true'
+		while(activator) {
+			System.out.println("printing while the activator is: " + activator);
 		}
 		
-		//it's convenient to use a limiter, to make the loop stop after an specific amount
-		//of repetitions or iterations
-			//this loop will only run while the limiter is less than 10
+		
+		
+		System.out.println("\n *while loop with a 'limiter'*");
+				
+		int limiter = 5;
+		
+		//this loop will only run while the limiter is less than 10
 			//at each iteration it will be increased 1 to the limiter
 			//the loop will stop after 10 repetitions
-		int limiter = 10;
-		
 		while(limiter < 10) {
 			System.out.println("printing while the limiter is less than 10: " + limiter);
 			limiter += 1;
-		}
-		
-		//but is also possible make a loop using an kind of activator, like an boolean value
-		boolean activator = false;
-		
-		while(activator) {
-			System.out.println("printing while the activator is true");
 		}
 		
 		
@@ -65,21 +65,30 @@ public class ControlStructures {
 				//the condition
 				//and the increaser
 			//inside the curly brackets goes the code to be executed each iteration
-		for(int i = 20; i < 20; i++) {
+		
+		System.out.println("\n *for loop*");
+		
+		final int FOR_LIMITER = 15;
+		
+		for(int i = FOR_LIMITER; i < 20; i++) {
 			System.out.println("printing until the limiter hits 20: " + i);
 		}
 		
 		
 		//for loops are frequently used at objects, more specifically Lists, Arrays, ArrayLists
 		//and etc...
-			
+		
+		System.out.println("\n *for loop into an array*");
+		
+		
 		int[] numbers = new int[3];
 		numbers[0] = 10;
 		numbers[1] = 20;
 		numbers[2] = 30;
 		
+		final int FOR_ARRAY_LIMITER = 0;
 		
-		for(int i = 0; i < numbers.length; i++) {
+		for(int i = FOR_ARRAY_LIMITER; i < numbers.length; i++) {
 			
 			System.out.println("printing the number " + numbers[i] + " at index " + i);
 			
@@ -116,7 +125,7 @@ public class ControlStructures {
 		
 		
 		//CONDITIONS
-		System.out.println("CONDITIONS EXAMPLES");
+		System.out.println("\nCONDITIONS EXAMPLES \n");
 		/*
 		 * conditions are blocks of code that are only executed if an certain value or 
 		 * objective is reach, so it works around a specific situation where, when something
@@ -140,16 +149,23 @@ public class ControlStructures {
 		
 		if(number == 5) {
 	
-			System.out.println("number is equal: " + number);
+			System.out.println(" *simple if*");
+			System.out.println("excuted because 'number' is equal to: " + number);
 		
 		}
 		
 		//we can also apply some expressions to the conditions:
-		boolean trueFalse = false;
+		boolean trueFalse = true;
 		
 		//checking if the boolean is false AND if the number is equals 5
-		if(!trueFalse && number == 5) {
-			System.out.println("executed because trueFalse is " + trueFalse);
+		if(trueFalse && number == 5) {
+			
+			final String RESULT_COMPOSED_IF = "\n" + "	'trueFalse' is: " + trueFalse 
+					 + "\n" + "	'number' is equal to: " + number;
+			
+			
+			System.out.println("\n *composed if*");
+			System.out.println("executed because: " + RESULT_COMPOSED_IF );
 		}
 		
 		
@@ -164,13 +180,17 @@ public class ControlStructures {
 				//executed when if fails to check true
 				//curly brackets contains the execution
 		
+		trueFalse = false;
+		
 		if(trueFalse) {
 			
-			System.out.println();
+			System.out.println("\n *simple if*");
+			System.out.println("executed because 'trueFalse' is " + trueFalse);
 		
 		} else {
 	
-			System.out.println();
+			System.out.println("\n *else execution*");
+			System.out.println("executed because 'trueFalse' is " + trueFalse);
 			
 		}
 		
@@ -186,9 +206,21 @@ public class ControlStructures {
 				//executed when the if checks false
 				//brackets holds the condition
 				//curly brackets contains execution
+		
+		trueFalse = true;
+		
 		if(trueFalse) {
 			
-		}else if(!trueFalse) {
+			System.out.println("\n *simple if*");
+			System.out.println("executed because 'trueFalse' is " + trueFalse);
+			
+		}else if(number == 5) {
+			
+			final String RESULT_ELIF = "\n" + "	'trueFalse' is: " + trueFalse 
+					 + "\n" + "	'number' is equal to: " + number;
+			
+			System.out.println("\n *else if excution*");
+			System.out.println("excuted because:" + RESULT_ELIF );
 			
 		}
 		
