@@ -15,9 +15,10 @@ public class ControlStructures {
 	
 		//LOOPS
 		System.out.println("\n LOOPINGS EXAMPLES \n");
-		
-		//loops in programming logic are structures that repeats something on a specific amount of 
-		//time, they're generally activated when a condition is validated true
+		/*
+		 * loops in programming logic are structures that repeats something on a specific amount of  
+		 * time, they're generally activated when a condition is validated true
+		 */
 		
 		//the most common loops are: for and while, but there's also the do while loop
 		
@@ -26,11 +27,10 @@ public class ControlStructures {
 			//While Loop:
 		
 		//this is the Java syntax for a while loop
-			//inside the brackets goes the condition variable
-				//usually a kind of activator is used, like an boolean value
-				//sometimes it's convenient to use a limiter
+			//inside the brackets goes: 
+				//usually a kind of 'activator' is used, like an boolean variable
+				//sometimes it's convenient to use a 'limiter', like an integer variable 
 			//inside the curly brackets goes the action to be executed
-		
 		
 		System.out.println("*while loop*");
 		
@@ -48,8 +48,6 @@ public class ControlStructures {
 		int limiter = 5;
 		
 		//this loop will only run while the limiter is less than 10
-			//at each iteration it will be increased 1 to the limiter
-			//the loop will stop after 10 repetitions
 		while(limiter < 10) {
 			System.out.println("printing while the limiter is less than 10: " + limiter);
 			limiter += 1;
@@ -106,6 +104,8 @@ public class ControlStructures {
 		
 		//the do while is used when something has to happen at least once on an application
 		//so it's more convenient to use it with others statements like conditions
+		System.out.println("\n *do/while loop*");
+		
 		int num = 0;
 		
 		do {
